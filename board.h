@@ -2,8 +2,19 @@
 #ifndef B_H
 #define B_H
 
-class Board {
+#include <iostream>
 
+class Board {
+public:
+
+	Board(int n, int m);
+	~Board();
+
+	void print();
+
+private:
+	char ** board;
+	int size;
 };
 
 #endif
